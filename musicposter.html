@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Fest Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background: url('https://img.freepik.com/premium-photo/people-dance-nightclub-party-concert-listen-music-from-dj-stage-background_31965-26873.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      width: 90%;
+      box-shadow: 0 0 20px #000;
+    }
+
+    .poster, .login {
+      flex: 1;
+      min-width: 250px;
+      padding: 20px;
+    }
+
+    .poster h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+
+    .poster p {
+      font-size: 1em;
+    }
+
+    .login h2 {
+      margin-bottom: 15px;
+      text-align: center;
+      color: #ffd700;
+    }
+
+    .login input, .login button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .login input {
+      background: #333;
+      color: #fff;
+    }
+
+    .login button {
+      background: #ffd700;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login button:hover {
+      background: #e6c200;
+    }
+
+    @media (max-width: 600px) {
+      .box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="poster">
+      <h1>MUSIC NIGHT</h1>
+      <p>Be part of the best Indian music concerts with top performances and a magical atmosphere <br><br> get your tickets today! 🎶🎉</p>
+    </div>
+    <div class="login">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <input type="email" placeholder="Email ID" required>
+        
+        <select required>
+          <option value="">Select Ticket Type</option>
+          <option value="general">General Admission</option>
+          <option value="vip">VIP</option>
+          <option value="backstage">Backstage Pass</option>
+        </select>
+        <select required>
+        <option value="">-- Choose a Date --</option>
+        <option value="2025-07-20">July 20, 2025</option>
+        <option value="2025-08-05">August 5, 2025</option>
+        <option value="2025-09-10">September 10, 2025</option>
+      </select>
+        <button type="submit">Submit</button>
+        <div class="extra">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+          <p><a href="#">Forgot password?</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
